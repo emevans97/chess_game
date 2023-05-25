@@ -12,5 +12,23 @@ def print_hi(name):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
+"""
+[[0,0,0,0,0,0,0,0]
+ [0,0,0,0,0,0,0,0]
+ [0,0,0,0,0,0,0,0]
+ [0,0,0,0,0,0,0,0]
+ [0,0,0,0,0,0,0,0]
+ [0,0,0,0,0,0,0,0]
+ [0,0,0,0,0,0,0,0]
+ [0,0,0,0,0,0,0,0]]
 
+[[C,K,B,Q,Kg,B,K,C]
+ [bP,P,P,P,P,P,P,P]
+ [0,0,0,0,0,0,0,0]
+ [0,0,0,0,0,0,0,0]
+ [0,0,0,0,0,0,0,0]
+ [0,0,0,0,0,0,0,0]
+ [wP,wP,wP,wP,wP,wP,wP,wP]
+ [0,0,0,0,0,0,0,0]]
+"""
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
