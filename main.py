@@ -2,7 +2,7 @@
 
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
+from board import Board
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -12,23 +12,7 @@ def print_hi(name):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
-"""
-[[0,0,0,0,0,0,0,0]
- [0,0,0,0,0,0,0,0]
- [0,0,0,0,0,0,0,0]
- [0,0,0,0,0,0,0,0]
- [0,0,0,0,0,0,0,0]
- [0,0,0,0,0,0,0,0]
- [0,0,0,0,0,0,0,0]
- [0,0,0,0,0,0,0,0]]
+    board = Board()
+    board.setup()
 
-[[C,K,B,Q,Kg,B,K,C]
- [bP,P,P,P,P,P,P,P]
- [0,0,0,0,0,0,0,0]
- [0,0,0,0,0,0,0,0]
- [0,0,0,0,0,0,0,0]
- [0,0,0,0,0,0,0,0]
- [wP,wP,wP,wP,wP,wP,wP,wP]
- [0,0,0,0,0,0,0,0]]
-"""
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
