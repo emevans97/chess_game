@@ -14,5 +14,6 @@ if __name__ == '__main__':
     print_hi('PyCharm')
     board = Board()
     board.setup()
+    board.print_board()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
