@@ -13,25 +13,30 @@ class Board():
                     ["P", "P", "P", "P", "P", "P", "P", "P"],
                     ["R", "N", "B", "Q", "K", "B", "N", "R"]]
         self.piece_dict = {
-            'r': Rook(0, "black"),
-            "n": Knight(0, "black"),
-            "b": Bishop(0, "black"),
-            "q": Queen(0, "black"),
-            "k": King(0, "black"),
-            "p": Pawn(0, "black"),
-            'R': Rook(0, "white"),
-            "N": Knight(0, "white"),
-            "B": Bishop(0, "white"),
-            "Q": Queen(0, "white"),
-            "K": King(0, "white"),
-            "P": Pawn(0, "white"),
+            'r': Rook("black"),
+            "n": Knight("black"),
+            "b": Bishop("black"),
+            "q": Queen("black"),
+            "k": King("black"),
+            "p": Pawn("black"),
+            'R': Rook("white"),
+            "N": Knight("white"),
+            "B": Bishop("white"),
+            "Q": Queen("white"),
+            "K": King("white"),
+            "P": Pawn("white"),
             " ": " "}
 
     def setup(self):
-        for count, row in enumerate(self.state):
-            mapped_list = pd.Series(row).map(self.piece_dict)
-            self.state[count] = mapped_list
-        print(self.state)
+        for rowcount, row in enumerate(self.state):
+            for col_count, piece in enumerate(self.state[rowcount]):
+                mapped_list = pd.Series([piece]).map(self.piece_dict)
+                self.state[rowcount] = mapped_list
+                if piece != " ":
+                    print([rowcount, col_count])
+                    self.state[rowcount][col_count].coord = [rowcount, col_count]
+
+
     
     def print_board(self):
         for row in self.state:
